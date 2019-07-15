@@ -32,7 +32,7 @@ public class BookServiceImpl implements BookService {
     @Override
     //@Transactional//事务控制 只是本方法
     public Optional<Book> findById(Integer id) {
-        //尽量使用jdk8新的Optional容器类，替代之前非容器类的写法
+        //尽量使用jdk8新的Optional容器类，替代之前非容器类的写法!!
         Optional<Book> byId = dao.findById(id);
         return byId;
     }
